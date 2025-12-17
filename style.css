@@ -1,70 +1,138 @@
-/* Reset default styles */
+﻿/* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: darkred;
 }
 
+/* CONTAINER */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Header */
+/* HEADER */
 header {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
+    background-image: url("images/popcorn.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    color: white;
 }
 
-header h1 {
-  margin-bottom: 10px;
-}
-
+/* NAV */
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Sections */
-.section {
-  padding: 40px 0;
-}
-
-.section:nth-child(even) {
-  background: #f4f4f4;
-}
-
-/* Footer */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
 .social-icons img {
     max-width: 100%;
     height: 50px;
 }
+/* SECTION */
+.section {
+    padding: 40px 0;
+}
 
-.imgg {
-    width: 50%;
-    height: 100px;
+/* ===== CARDS LAYOUT ===== */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    width: 35%;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    /* IMAGE */
+    .card img {
+        width: 100%;
+        height: 520px; /* הגובה שהוגדר */
+        object-fit: cover; /* מילוי מלא בלי עיוות */
+        border-radius: 10px;
+    }
+
+    /* TITLE */
+    .card h3 {
+        margin: 12px 0;
+        color: #333;
+    }
+
+    /* TEXT */
+    .card p {
+        color: #555;
+        font-size: 0.95em;
+    }
+
+    /* LINK */
+    .card a {
+        display: inline-block;
+        margin: 10px 0;
+        color: darkred;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* BUTTON */
+    .card button {
+        background: darkred;
+        color: white;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+        .card button:hover {
+            background: #a00000;
+        }
+
+    /* INFO */
+    .card .info {
+        font-size: 0.85em;
+        color: #777;
+    }
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
