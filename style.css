@@ -1,20 +1,25 @@
+﻿/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: darkred;
 }
+
+/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* HEADER */
 header {
     background-image: url("images/popcorn.jpg");
     background-size: cover;
@@ -23,6 +28,7 @@ header {
     color: white;
 }
 
+/* NAV */
 nav ul {
     list-style: none;
     display: flex;
@@ -37,21 +43,23 @@ nav a {
     max-width: 100%;
     height: 50px;
 }
+/* SECTION */
 .section {
     padding: 40px 0;
 }
 
+/* ===== CARDS LAYOUT ===== */
 .cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-
+/* CARD */
 .card {
     background: white;
     border-radius: 12px;
-    width: 35%;
+    width: 32%;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     text-align: center;
@@ -59,23 +67,27 @@ nav a {
     flex-direction: column;
 }
 
+    /* IMAGE */
     .card img {
         width: 100%;
-        height: 520px;
-        object-fit: cover;
+        height: 520px; /* הגובה שהוגדר */
+        object-fit: cover; /* מילוי מלא בלי עיוות */
         border-radius: 10px;
     }
 
+    /* TITLE */
     .card h3 {
         margin: 12px 0;
         color: #333;
     }
 
+    /* TEXT */
     .card p {
         color: #555;
         font-size: 0.95em;
     }
 
+    /* LINK */
     .card a {
         display: inline-block;
         margin: 10px 0;
@@ -84,6 +96,7 @@ nav a {
         text-decoration: none;
     }
 
+    /* BUTTON */
     .card button {
         background: darkred;
         color: white;
@@ -98,14 +111,93 @@ nav a {
             background: #a00000;
         }
 
+    /* INFO */
     .card .info {
         font-size: 0.85em;
         color: #777;
     }
 
+/* FOOTER */
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
+#services {
+    padding: 40px 0;
+}
+
+/* הקונטיינר של כל פריטי השירות */
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+}
+
+/* כל פריט שירות */
+.service-card {
+    width: 33.333%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* אייקונים – גודל אחיד */
+    .service-card img {
+        width: 80px; /* דרישה: אייקונים בגודל אחיד */
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    /* כותרת */
+    .service-card h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    /* טקסט קצר */
+    .service-card p {
+        font-size: 15px;
+        color: black;
+    }
+
+    /* קישור */
+    .service-card a {
+        margin: 10px 0;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* כפתור לפעולה */
+    .service-card button {
+        background-color: darkred;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+        /* hover – הכפתור נראה ומתפקד */
+        .service-card button:hover {
+            background-color: darkred;
+        }
+
+    /* מידע נוסף (תאריך / מחיר / זמינות) */
+    .service-card .info {
+        margin-top: 10px;
+        font-size: 0.85em;
+        color: black;
+    }
