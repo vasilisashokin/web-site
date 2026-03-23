@@ -199,79 +199,115 @@ footer {
         transform: translateY(-6px);
         box-shadow: 0 12px 30px rgba(0,0,0,0.25);
     }
-/* Contact Page */
-.contact-container {
-    width: 90%;
-    max-width: 600px;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+/* כללי */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: #f4f6f9;
+    margin: 0;
     text-align: center;
 }
 
-.contact-container h1 {
-    margin-bottom: 20px;
-    color: darkred;
+/* כותרת */
+h1 {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    margin: 0;
 }
 
-.contact-info {
-    margin-bottom: 20px;
-    color: #333;
+/* בלוק פרטים */
+div {
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.contact-info a {
-    color: darkred;
+/* קישורים */
+a {
+    color: #4a90e2;
     text-decoration: none;
     font-weight: bold;
 }
 
-.contact-info a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Form */
-#contactForm input,
-#contactForm textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-family: Arial;
+/* קו הפרדה */
+hr {
+    width: 60%;
+    margin: 20px auto;
 }
 
-#contactForm textarea {
-    height: 120px;
+/* טופס */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: auto;
+}
+
+/* שדות */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* פוקוס */
+input:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* textarea */
+textarea {
+    height: 90px;
     resize: none;
 }
 
-#contactForm button {
-    background: darkred;
+/* כפתור שליחה */
+#submitBtn {
+    background-color: #4a90e2;
     color: white;
     border: none;
-    padding: 10px 25px;
-    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-#contactForm button:hover {
-    background: #a00000;
+#submitBtn:hover {
+    background-color: #357abd;
 }
 
-/* GET POST buttons */
-.api-buttons button {
-    background: #333;
-    color: white;
+/* כפתורים למטה */
+#getBtn, #postBtn {
+    margin: 10px 5px;
+    padding: 10px 15px;
     border: none;
-    padding: 8px 18px;
-    border-radius: 20px;
+    border-radius: 5px;
+    color: white;
     cursor: pointer;
-    margin: 5px;
 }
 
-.api-buttons button:hover {
-    background: black;
+#getBtn {
+    background-color: #27ae60;
+}
+
+#postBtn {
+    background-color: #e67e22;
 }
