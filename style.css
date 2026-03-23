@@ -199,82 +199,79 @@ footer {
         transform: translateY(-6px);
         box-shadow: 0 12px 30px rgba(0,0,0,0.25);
     }
-/* כללי */
-.contact-page {
-    font-family: Arial, sans-serif;
-    direction: rtl;
-    background: #f4f6f9;
+/* Contact Page */
+.contact-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     text-align: center;
 }
 
-/* כותרת */
-.contact-page h1 {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
-    margin: 0;
+.contact-container h1 {
+    margin-bottom: 20px;
+    color: darkred;
 }
 
-/* בלוק פרטים */
-.contact-page div {
-    background: white;
-    width: 300px;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.contact-info {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-/* קישורים */
-.contact-page a {
-    color: #4a90e2;
+.contact-info a {
+    color: darkred;
     text-decoration: none;
     font-weight: bold;
 }
 
-.contact-page a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
 
-/* טופס */
-.contact-page form {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 300px;
-    margin: auto;
-}
-
-/* שדות */
-.contact-page input,
-.contact-page textarea {
-    width: 100%;
+/* Form */
+#contactForm input,
+#contactForm textarea {
+    width: 60px;
     padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 5px;
+    margin: 8px 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    font-family: Arial;
 }
 
-/* כפתור */
-.contact-page #submitBtn {
-    background-color: #4a90e2;
+#contactForm textarea {
+    height: 120px;
+    resize: none;
+}
+
+#contactForm button {
+    background: darkred;
     color: white;
     border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
+    padding: 10px 25px;
+    border-radius: 20px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-/* כפתורים תחתונים */
-.contact-page #getBtn {
-    background-color: #27ae60;
-    color: white;
+#contactForm button:hover {
+    background: #a00000;
 }
 
-.contact-page #postBtn {
-    background-color: #e67e22;
+/* GET POST buttons */
+.api-buttons button {
+    background: #333;
     color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.api-buttons button:hover {
+    background: black;
 }
