@@ -199,53 +199,67 @@ footer {
         transform: translateY(-6px);
         box-shadow: 0 12px 30px rgba(0,0,0,0.25);
     }
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+/* ===== CONTACT PAGE ONLY ===== */
+.contact-page {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-  resize: none;
+.contact-page h1 {
+    margin-bottom: 20px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  border-color: #0077cc;
-  outline: none;
+.contact-page div {
+    margin-bottom: 20px;
 }
 
-textarea {
-  height: 120px;
+.contact-page a {
+    color: white;
+    text-decoration: underline;
 }
 
-button {
-  background-color: #444;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: fit-content;
+.contact-page form {
+    background: white;
+    color: black;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-button:hover {
-  background-color: #222;
+.contact-page input,
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-#getBtn,
-#postBtn {
-  margin-right: 10px;
+.contact-page textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-page button {
+    background: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-page button:hover {
+    background: #a00000;
+}
+
+/* кнопки GET/POST */
+.contact-page #getBtn,
+.contact-page #postBtn {
+    margin: 10px;
 }
