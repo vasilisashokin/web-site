@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="he">
-<head>
-  <meta charset="UTF-8">
-  <title>צור קשר</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body class="contact-page">
-  <h1>צור קשר</h1>
 
-  <header>
+<h1>צור קשר</h1>
+
+<header>
     <div class="container">
         <h1>My Website</h1>
         <nav>
@@ -21,36 +15,31 @@
     </div>
 </header>
 
-  
-  <div>
-    <p> מייל: example@gmail.com</p>
-    <p> טלפון: 050-1234567</p>
+<div>
+    <p>מייל: example@gmail.com</p>
+    <p>טלפון: 050-1234567</p>
 
-    <p> רשתות חברתיות:</p>
+    <p>רשתות חברתיות:</p>
     <a href="#">Facebook</a> |
     <a href="#">Instagram</a> |
     <a href="#">LinkedIn</a>
-  </div>
+</div>
 
-  <hr>
+<hr>
 
-  
-  <form id="contactForm">
+<form id="contactForm">
 
-    <input type="text" id="fullname" placeholder="שם מלא"><br><br>
-    <input type="email" id="email" placeholder="אימייל"><br><br>
-    <input type="text" id="phone" placeholder="טלפון"><br><br>
-    <input type="text" id="subject" placeholder="נושא ההודעה"><br><br>
-    <textarea id="message" placeholder="תוכן ההודעה"></textarea><br><br>
+    <input type="text" id="username" placeholder="שם מלא">
+    <input type="email" id="email" placeholder="אימייל">
+    <input type="text" id="phone" placeholder="טלפון">
+    <input type="text" id="subject" placeholder="נושא ההודעה">
+    <textarea id="message" placeholder="תוכן ההודעה"></textarea>
 
     <button type="button" id="submitBtn">שלח</button>
-  </form>
+</form>
 
-  <br>
+<button id="getBtn">שלח GET</button>
+<button id="postBtn">שלח POST</button>
 
-  <button id="getBtn">שלח GET</button>
-  <button id="postBtn">שלח POST</button>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-</html>
